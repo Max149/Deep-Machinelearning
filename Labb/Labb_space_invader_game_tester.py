@@ -7,7 +7,7 @@ from gymnasium.wrappers.atari_preprocessing import AtariPreprocessing
  
 gym.register_envs(ale_py)
 
-model_file = "Labb/breakout_qmodel_9998.keras"
+model_file = "Labb/space_invaders_qmodel_109990.keras"
 agent = keras.models.load_model(model_file)
 
 env = gym.make("SpaceInvadersNoFrameskip-v4", render_mode="human")
